@@ -11,7 +11,7 @@ RUN npm install
 
 #DELIVERY ARTIFACT STAGE:
 
-FROM node:10-alpine as delivey
+FROM node:10-alpine as delivery
 
 WORKDIR /usr/src/app
 
