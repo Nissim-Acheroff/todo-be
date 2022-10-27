@@ -17,6 +17,12 @@ pipeline {
                 sh 'docker system prune -f'
             }
         }
+        stage('Cleanup') {
+            steps {
+                echo "Cleanup-stage"
+                sh 'docker system prune -f'
+            }
+        }
         stage('push') {
             environment {
                 dockerpwd = credentials('docker_pwd')
