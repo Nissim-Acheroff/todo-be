@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
                     sh 'docker login -u nissimacheroff -p ${dockerpwd}'
-                    sh "docker push nissimacheroff/todo-be:latest"
+                    sh "docker push nissimacheroff/todo-be:$BUILD_NUMBER"
         }
     }
 }
